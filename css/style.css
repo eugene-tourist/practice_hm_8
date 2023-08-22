@@ -1,0 +1,372 @@
+/* &display=swap&subset=cyrillic-ext */
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,700,900&display=swap");
+
+
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+img {
+    vertical-align: top;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+html {
+    font-size: 16px;
+    /* по умолчанию */
+}
+
+body {
+    line-height: 1;
+    background-color: grey;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+}
+
+/* ------------------------------ */
+.main-div{
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+h1{
+    font-size: 36px;
+    color: wheat;
+    background-color: firebrick;
+    max-width: 550px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px 0px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 2px  wheat ;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+h2{
+    font-size: 26px;
+    background-color: forestgreen;
+    color: blue;
+    border-radius: 15px;
+    padding: 10px;
+    max-width: 330px;
+    box-shadow: 0px 3px 2px wheat;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.main-list-content {
+    margin-bottom: 50px;
+    background-color: hsla(0, 100%, 50%, 0.229);
+}
+
+.main-list-content-item{  
+    margin-bottom: 20px;
+    padding: 0 0 0 20px;
+}
+
+.main-list-content-item::before{
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: green;
+    border-radius: 50%;
+    margin: 0 10px 0 -20px;
+}
+
+.main-list-content-link{
+    font-size: 24px;
+    color: greenyellow;
+    text-decoration: underline;
+}
+
+.visited{
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.visited-link{
+    background-color: brown;
+    display: inline-block;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 3px 5px 5px black;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: black
+}
+
+.visited-link:visited{
+    color: blanchedalmond;
+}
+
+.hover {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.hover-link {
+    background-color: rgba(137, 43, 226, 0.47);
+    display: inline-block;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 3px 5px 5px black;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: black
+}
+
+.hover-link:hover {
+    color: blanchedalmond;
+}
+
+.focus {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.focus-link {
+    background-color: rgba(104, 226, 43, 0.47);
+    display: inline-block;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 3px 5px 5px black;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: black
+}
+
+.focus-link:focus { 
+    outline: 3px solid red; 
+    color: crimson;                                   
+}
+
+
+.active {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.active-link {
+    background-color: rgba(226, 180, 43, 0.47);
+    display: inline-block;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 3px 5px 5px black;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: black
+}
+
+.active-link:active {
+    outline: 5px dotted wheat;
+    color: yellow;
+}
+
+.target {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.target-link {
+    background-color: rgba(226, 30, 135, 0.47);
+    display: inline-block;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 3px 5px 5px black;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: black
+}
+
+.object-for-target{
+    background-color: aquamarine;
+    font-size: 16px;
+    padding: 30px;
+    max-width: 500px;
+    margin: 0 auto;
+    border-radius: 25px;
+}
+
+.object-for-target:target {
+    font-size: 36px;
+    background-color: cadetblue;
+}
+
+h3 {
+    font-size: 70px;
+    color: red;
+    background: green;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 50px 300px 50px 300px;
+    box-shadow: 1px 3px 3px black;
+    text-align: center;
+    text-shadow: 3px 3px 3px black;
+}
+
+.task-1{
+    background-color: #F5F5F5;
+}
+
+.task-1-content {
+    max-width: 1020px;
+    margin: 0 auto;
+}
+
+.task-1-subtitle {
+    font-family: "Roboto";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 200%;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    margin-bottom: 33px;
+    color: #5D62B5;
+}
+
+.task-1-subtitle::before{
+    content: "";
+    width: 17px;
+    height: 28px;
+    background: url(../img/our_promise/icon.png) 0px -2px no-repeat;
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 34px;
+}
+
+.task-1-title {
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 116.6%;
+    margin-bottom: 68px;
+}
+
+.task-1-items {
+    padding-bottom: 122px;
+}
+
+.task-1 img{
+    margin-right: 23px;
+}
+
+.task-1-item {
+    display: inline-block;
+    max-width: 33.333%;
+    vertical-align: top;
+}
+
+
+.task-1-item-content {
+    display: inline-block;
+    max-width: 235px;
+}
+
+.task-1-item-content-title {
+    font-family: Roboto;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 136.8%;
+    color: #F2726F;
+    margin-bottom: 20px;
+}
+
+.task-1-item-content-text {
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0.15px;
+}
+
+.task-2 {
+    max-width: 1020px;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.task-2-block {
+    max-width: 255px;
+    background-color: #252525;
+    padding: 24px 24px 60px 24px;
+    margin: 0 auto;
+    border-radius: 6px;
+}
+
+.task-2-title {
+    color: #FFF;
+    font-family: Times New Roman;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.275px;
+    text-transform: capitalize;
+    margin-bottom: 26px;
+}
+
+.task-2-title::after{
+    content: "";
+    width: 56px;
+    height: 2px;
+    background: #34C759;
+    display: block;
+    margin-top: 10px;
+}
+
+.task-2-text {
+    color: rgba(255, 255, 255, 0.50);
+    font-family: Times New Roman;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 138.462%;
+    letter-spacing: -0.162px;
+}
+
+

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 8</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header"></header>
+        <main class="main">
+            <div class="main-div">
+                <h1>Псевдоклассы и псевдоэлементы</h1>
+                <div class="main-div-menu-1">
+                    <h2>Псевдоклассы состояния</h2>
+                    <ul class="main-list-content">
+                        <li class="main-list-content-item"><a href="#visited-1"
+                                class="main-list-content-link">:visited</a>
+                            - Срабатывает
+                            для посещенных ссылок. <mark>
+                                Замечание: Из-за причин приватности,
+                                браузеры строго ограничивают стили, которые вы
+                                можете применить к элементу, используя этот псевдо-класс:
+                                только color, background-color, border-color,
+                                border-bottom-color, border-left-color, border-right-color,
+                                border-top-color, outline-color, column-rule-color,
+                                fill и stroke. Заметьте также, что альфа-канал будет
+                                игнорироваться: будет использоваться альфа-канал,
+                                используемый для непосещённых ссылок вместо него
+                                (но если прозрачность - 0, то в этот случае
+                                игнорируется весь цвет, и один из используемых
+                                стилей для непосещённых ссылок).
+                            </mark></li>
+                        <li class="main-list-content-item"><a href="#hover-1" class="main-list-content-link">:hover</a>
+                            -
+                            Срабатывает
+                            при наведении на элемент,
+                            часто применяется применяется как для ссылок так
+                            и для любого другого элемента.</li>
+                        <li class="main-list-content-item"><a href="#focus-1" class="main-list-content-link">:focus</a>
+                            -
+                            Срабатывает
+                            при получении элементом фокуса.
+                            Часто применяется к елементам форм. Например инпутам.</li>
+                        <li class="main-list-content-item"><a href="#active-1"
+                                class="main-list-content-link">:active</a> -
+                            Срабатывает
+                            при нажатии на элемент.
+                            В основном применяется к ссылкам и кнопкам.</li>
+                        <li class="main-list-content-item"><a href="#target-1"
+                                class="main-list-content-link">:target</a> -
+                            Срабатывает
+                            когда элемент является объектом
+                            на который ссылаются</li>
+                    </ul>
+                </div>
+                <div class="options">
+                    <div class="visited">
+                        <a target="_blank" id="visited-1" href="http://google.com" class="visited-link">visited link</a>
+                    </div>
+                    <div class="hover">
+                        <a target="_blank" id="hover-1" href="http://google.com" class="hover-link">hover link</a>
+                    </div>
+                    <div class="focus">
+                        <a target="_blank" id="focus-1" href="http://google.com" class="focus-link">focus link</a>
+                    </div>
+                    <div class="active">
+                        <a target="_blank" id="active-1" href="http://google.com" class="active-link">active link</a>
+                    </div>
+                    <div class="target">
+                        <a target="_blank" id="target-1" href="#object-1" class="target-link">target link</a>
+                    </div>
+                    <div id="object-1" class="object-for-target">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat mollitia quaerat inventore quos
+                        eaque asperiores perspiciatis culpa sequi, architecto unde eos non nostrum delectus voluptatum
+                        nisi molestias cumque aliquid! Voluptate!
+                    </div>
+                </div>
+            </div>
+            <div class="task-1">
+                <h3>Task-1</h3>
+                <div class="task-1-content">
+                    <div class="task-1-subtitle">OUR PROMISE TO YOU</div>
+                    <div class="task-1-title">Sed perspiciatis omnis iste natus</div>
+                    <div class="task-1-items">
+                        <div class="task-1-item">
+                            <img src="img/our_promise/01.png" alt="">
+                            <div class="task-1-item-content">
+                                <div class="task-1-item-content-title">24/7 Love & Care</div>
+                                <div class="task-1-item-content-text">At vero eos et accusamus et iusto odio dignissimos
+                                    ducimus qui blanditiis praesentium corrupti quos dolores et quas.</div>
+                            </div>
+                        </div>
+                        <div class="task-1-item">
+                            <img src="img/our_promise/02.png" alt="">
+                            <div class="task-1-item-content">
+                                <div class="task-1-item-content-title">On-site Veterinarian</div>
+                                <div class="task-1-item-content-text">Dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="task-1-item">
+                            <img src="img/our_promise/03.png" alt="">
+                            <div class="task-1-item-content">
+                                <div class="task-1-item-content-title">Live-stream Cameras</div>
+                                <div class="task-1-item-content-text">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur illum.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="task-2">
+                <div class="task-2-block">
+                    <div class="task-2-title">
+                        Choose how often
+                    </div>
+                    <div class="task-2-text">
+                        Our team of chefs do the prep work - no more chopping, measuring, or sink full of dishes!
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer"></footer>
+    </div>
+</body>
+
+</html>
